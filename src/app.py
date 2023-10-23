@@ -17,7 +17,7 @@ app = dash.Dash('HH_interactive')
 server = app.server
 
 #import data
-HH = pd.read_csv('/Users/apak/Desktop/ERG/Half_Heuslers/Post_processed_data/HH_Beta_Tetrahedral_temp.csv')
+HH = pd.read_csv('HH_Beta_Tetrahedral_temp.csv')
 sub_columns = HH[['Compound','kappa_L','beta_n','DOSmass_CB','bmass_CB','mobility_n','Nb_CB','beta_p','DOSmass_VB','bmass_VB','mobility_p','Nb_VB']]
 sub_columns_n = HH[['Compound','beta_n','DOSmass_CB','bmass_CB','mobility_n','kappa_L','Nb_CB']]
 sub_columns_p = HH[['Compound','beta_p','DOSmass_VB','bmass_VB','mobility_p','kappa_L','Nb_VB']]
